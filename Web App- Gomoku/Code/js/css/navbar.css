@@ -1,0 +1,64 @@
+/* styles.css */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #5E4E4E;
+    position: fixed;
+    bottom: 0;
+    height: 14vh;
+    width: 100%;
+}
+
+.navbar img {
+    width: 7vh; /* Defina a largura desejada */
+    height: 7vh; /* Defina a altura desejada */
+    color: white; /* Altera a cor do texto para branco */
+    cursor: pointer; /* Define o cursor como pointer */
+}
+
+.navbar img.middle {
+    width: 9vh; /* Defina a largura desejada */
+    height: 9vh; /* Defina a altura desejada */
+    color: white; /* Altera a cor do texto para branco */
+    cursor: pointer; /* Define o cursor como pointer */
+    text-decoration: none;
+}
+
+.navbar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5E4E4E;
+    position: fixed;
+    top: 0;
+    height: 8vh;
+    width: 100%;
+    color: white;
+}
+
+.navbar-top a{
+    text-decoration: none;
+    color: white
+}
+
+
+.navbar-bottom {
+    display: flex;
+    align-items: center;
+    background-color: #5E4E4E;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    height: 8vh;
+    width: 100%;
+}
+
+.navbar-bottom h3 {
+    color: white;
+}
+
+#hide{
+    color: #5E4E4E;
+    cursor: context-menu;
+}

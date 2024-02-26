@@ -1,0 +1,37 @@
+.gameModes button.selected {
+    border: 2px solid #0000FF;
+}
+
+.lobby-container {
+    color: #ffffff;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    background-color: #785F5F;
+    margin: auto; /* Centraliza o container */
+}
+
+.gameModes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; /* Alteração aqui para space-between */
+    text-align: center; /* Se necessário para centralizar o texto dentro dos botões */
+}
+
+/* Estilos para os botões dentro de .gameModes, ajuste conforme necessário */
+.gameModes button {
+    height: 15vh;
+    width: 15vw;
+    background-color: #DEB887;
+    border-radius: 25px; /* Adicione o valor desejado para arredondar os cantos */
+    border: 2px solid #5E4E4E;
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte (negrito) */
+    color: #ffffff; /* Cor do texto *
+    margin: 0; /* Remova qualquer margem padrão que os botões possam ter */
+}

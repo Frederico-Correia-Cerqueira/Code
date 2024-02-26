@@ -1,0 +1,53 @@
+volumes:
+  data:
+
+version: '3.3'
+services:
+  postgredb:
+    container_name: postgredb
+    hostname: postgredb
+    image: postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=PedroAdmin
+      - POSTGRES_DB=postgres
+    ports:
+      - 5433:5432
+    volumes:
+      - ./src/main/sql/CreateTables.sql:/docker-entrypoint-initdb.d/CreateTables.sql
+
+  gomoku-service-1:
+    container_name: gomoku-service-1
+    hostname: gomoku-service-1
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      JDBC_DATABASE_URL: "jdbc:postgresql://postgredb:5432/postgres?user=postgres&password=PedroAdmin"
+      port: 8081
+    ports:
+      - 8081:8081
+
+  gomoku-service-2:
+    container_name: gomoku-service-2
+    hostname: gomoku-service-2
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      port: 8082
+      JDBC_DATABASE_URL: "jdbc:postgresql://postgredb:5432/postgres?user=postgres&password=PedroAdmin"
+    ports:
+      - 8082:8082
+
+  nginx:
+    container_name: nginx
+    image: nginx
+    ports:
+      - 8080:8080
+    volumes:
+      - ./:/etc/nginx.conf
+      - ./static-content:/static
+    depends_on:
+      - gomoku-service-1
+      - gomoku-service-2

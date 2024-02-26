@@ -1,0 +1,72 @@
+
+.cell {
+    position: relative;
+    width: 3.5vh;
+    height: 3.5vh;
+    box-sizing: border-box;
+    cursor: pointer
+}
+
+.player-display {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.player-display h2 {
+    color: white;
+    cursor: pointer;
+}
+
+.player-display img {
+    position: relative;
+    width: 4vh;
+    height: 4vh;
+}
+
+.clicked-opponent-stats {
+    position: absolute;
+    width: 20vw;
+    top: 48%; /* Coloca o topo da div no meio do contêiner pai (board) */
+    transform: translateY(-50%); /* Move a div para cima pela metade da sua própria altura */
+    right: 1vw;
+    background-color: rgba(138, 115, 115, 0.79); /* Adapte conforme necessário */;
+    color: #ffffff;
+    padding-inline: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adapte conforme necessário */
+}
+
+.clicked-opponent-stats .show-rank img {
+    width: 10vw;
+}
+
+.clicked-player-stats {
+    position: absolute;
+    width: 20vw;
+    top: 48%; /* Coloca o topo da div no meio do contêiner pai (board) */
+    transform: translateY(-50%); /* Move a div para cima pela metade da sua própria altura */
+    left: 1vw;
+    color: #ffffff;
+    background-color: rgba(138, 115, 115, 0.79);; /* Adapte conforme necessário */
+    padding-inline: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adapte conforme necessário */
+}
+
+.clicked-player-stats .show-rank img {
+    width: 10vw;
+}
+
+.player-stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.player-stats img {
+    width: auto;
+    height: 8vh; /* Ajuste o valor conforme necessário */
+}
+  

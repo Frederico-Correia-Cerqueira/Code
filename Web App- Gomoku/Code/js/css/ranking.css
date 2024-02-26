@@ -1,0 +1,73 @@
+
+
+.ranking-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10vh;
+    background-color: #785F5F;
+    text-align: center; /* Se necessário para centralizar o texto dentro dos botões */
+    margin: 0; /* Centraliza o container */
+}
+
+.ranking-container h1{
+    color: #ffffff;
+}
+.ranking-container h2{
+    color: #ffffff;
+}
+
+.ranks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 15vh;
+    margin: 0;
+}
+
+.ranks img {
+    height: 12vh;
+    width: auto;
+    cursor: pointer; /* Define o cursor como pointer */
+}
+
+.ranks img.selected {
+    width: auto; /* Defina a largura desejada */
+    height: 14vh; /* Defina a altura desejada */
+}
+
+
+.ranking-table-container {
+    width: 100%;
+    height: 52vh; /* Defina uma altura máxima para evitar ocupar toda a tela */
+    overflow-y: auto; /* Adicione rolagem vertical quando necessário */
+  }
+
+.ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ranking-table th,td {
+    border: 1px solid #ccc;
+    padding: 1vh;
+    text-align: left;
+}
+
+.ranking-table th {
+    background-color: #f0f0f0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.ranking-table td {
+    background-color: #fff;
+}
+
+.ranking-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

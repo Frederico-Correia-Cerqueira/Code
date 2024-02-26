@@ -1,0 +1,10 @@
+.game-container {
+    height:100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #785F5F;
+    text-align: center; /* Se necessário para centralizar o texto dentro dos botões */
+    margin: 0; /* Centraliza o container */
+}

@@ -1,0 +1,17 @@
+.gameResult-container {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 8vh;
+    text-align: center; /* Centraliza o texto */
+    background-color: #785F5F;
+    margin: auto; /* Centraliza o container */
+}
+
+.gameResult-container img {
+    width: 40vh;
+    height: auto;
+}
+
+.gameResult-container .show-rank img {
+    width: 10vw;
+}

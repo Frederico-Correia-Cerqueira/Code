@@ -1,0 +1,85 @@
+.savedgames-container {
+    top: 8vh;
+    bottom: 14vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+    background-color: #785F5F;
+    text-align: center; /* Se necessário para centralizar o texto dentro dos botões */
+    margin: 0; /* Centraliza o container */
+}
+
+.board-container {
+    padding-top: 8vh;
+    padding-bottom: 14vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #785F5F;
+    text-align: center; /* Se necessário para centralizar o texto dentro dos botões */
+    margin: 0; /* Centraliza o container */
+
+}
+
+.input-styled {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.input-button {
+    width: 5vh;
+    height: 5vh;
+    cursor: pointer;
+}
+
+
+.board-manage-controllers img {
+    height: 5vh;
+    cursor: pointer;
+}
+
+.savedgames-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.savedgames-table-container {
+    width: 100%;
+    max-height: 64vh; /* Defina uma altura máxima para evitar ocupar toda a tela */
+    overflow-y: auto; /* Adicione rolagem vertical quando necessário */
+  }
+
+.savedgames-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.savedgames-table th,td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.savedgames-table th {
+    background-color: #f0f0f0;
+    position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.savedgames-table td {
+    background-color: #fff;
+}
+
+.savedgames-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

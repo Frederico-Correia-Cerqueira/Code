@@ -1,0 +1,32 @@
+.welcome-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.h1Home {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.welcome-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.welcome-link:hover {
+    background-color: #166fe5;
+}
